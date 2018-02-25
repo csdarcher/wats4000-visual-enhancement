@@ -47,7 +47,7 @@ export default {
   color: white;
 }
 .info {
-  background: blue;
+  background: orange;
   color: white;
 }
 </style>
