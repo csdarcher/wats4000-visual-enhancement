@@ -98,7 +98,7 @@ export default {
         this.messages.push(message);
     },
     findWords: function() {
-      this.spinner = true;
+      this.showSpinner = true;
       this.results = null;
       axios.get('https://api.datamuse.com/words', {
         params: {
@@ -108,11 +108,11 @@ export default {
         }
       })
       .then( response => {
-        this.spinner = false;
+        this.showSpinner = false;
         this.results = response.data;
       })
       .catch( error => {
-        this.spinner = false;
+        this.showSpinner = false;
         let message = {
             type: 'error',
             text: error.message
