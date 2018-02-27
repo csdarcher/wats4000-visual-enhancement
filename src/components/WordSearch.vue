@@ -112,7 +112,7 @@ export default {
         this.results = response.data;
       })
       .catch( error => {
-        this.showSpinner = false;
+        this.showS`pinner = false;
         let message = {
             type: 'error',
             text: error.message
